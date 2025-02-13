@@ -19,9 +19,9 @@ modules:
 
   - type: rpm-ostree
     repos:
-    wiiznokes/cosmic-applets-unofficial
+      - wiiznokes/cosmic-applets-unofficial
     install:
-    cosmic-ext-applet-clipboard-manager
+      - cosmic-ext-applet-clipboard-manager
     # remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
