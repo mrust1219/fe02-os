@@ -34,6 +34,9 @@ modules:
       - gnome-shell-extension-window-list
       - gnome-shell-extension-background-logo
       - gnome-classic-session
+      - gnome-system-monitor
+      - gnome-tour
+      - yelp
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
