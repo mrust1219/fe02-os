@@ -21,12 +21,15 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/wiiznokes/cosmic-applets-unofficial/repo/fedora-%OS_VERSION%/wiiznokes-cosmic-applets-unofficial-fedora-%OS_VERSION%.repo
     install:
+      - cosmic-store
       - cosmic-ext-applet-clipboard-manager
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - gnome-software
+      - gnome-system-monitor
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
