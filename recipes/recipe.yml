@@ -19,12 +19,21 @@ modules:
 
   - type: rpm-ostree
     # repos:
-    # install:
+    install:
+    - gnome-tweaks
+    - adw-gtk3-theme
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - gnome-shell-extension-common
+      - gnome-shell-extension-apps-menu
+      - gnome-shell-extension-launch-new-instance
+      - gnome-shell-extension-places-menu
+      - gnome-shell-extension-window-list
+      - gnome-shell-extension-background-logo
+      - gnome-classic-session
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
